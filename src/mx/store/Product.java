@@ -60,6 +60,16 @@ public class Product {
     public void setPrice(double price) {
         this.price = price;
     }
+
+    //sustituir método toString() de la clase Object
+    //para permitir la visualización de cada objeto en la consola
+    @Override
+    public String toString() {
+        return "\nItemNumber=" + itemNumber +
+                "\nName='" + name + '\'' +
+                "\nQtyInStock=" + qtyInStock +
+                "\nPrice=" + price;
+    }
 } // end of class Product
 
 
