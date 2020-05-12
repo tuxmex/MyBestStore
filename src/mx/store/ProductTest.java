@@ -14,5 +14,11 @@ public class ProductTest {
         Product p5 = new Product(5, "Dragon Ball Super Broly", 30, 7.77);
         Product p6 = new Product(6, "La vida es Bella", 40, 8.88);
 
+        System.out.println(p1);
+        System.out.println(p2);
+        System.out.println(p3);
+        System.out.println(p4);
+        System.out.println(p5);
+        System.out.println(p6);
     }
 }
