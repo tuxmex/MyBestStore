@@ -21,34 +21,42 @@ public class Product {
         this.price = price;
     }// end constructor
 
+    // return the current value of itemNumber
     public int getItemNumber() {
         return itemNumber;
     }
 
+    // updates the value of itemNumber
     public void setItemNumber(int itemNumber) {
         this.itemNumber = itemNumber;
     }
 
+    // return the current value of name
     public String getName() {
         return name;
     }
 
+    // update the value of name
     public void setName(String name) {
         this.name = name;
     }
 
+    // return the current value of qtyInStock
     public int getQtyInStock() {
         return qtyInStock;
     }
 
+    // update the value of qtyInStock
     public void setQtyInStock(int qtyInStock) {
         this.qtyInStock = qtyInStock;
     }
 
+    // return the current value of price
     public double getPrice() {
         return price;
     }
 
+    // update the value of price
     public void setPrice(double price) {
         this.price = price;
     }
