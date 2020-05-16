@@ -70,7 +70,9 @@ public class ProductTest {
     }
 
     static void displayInventory(Product[] products){
-
+        for (Product product : products) {
+            System.out.println(product);
+        } //end for
     }//end method displayInventory
 
 
