@@ -1,7 +1,10 @@
 package mx.store;
 
+import java.util.List;
+
 public class Practices {
     private static int a;
+
 
     public static void main(String[] args) {
 
@@ -44,12 +47,26 @@ public class Practices {
         }
         System.out.println(num);*/
 
-        for (int i = 10; i < 20; i++) {
+        /*for (int i = 10; i < 20; i++) {
             System.out.println("i: " + i);
         }
+*/
 
+     /*   List nums = new ArrayList();
+        nums = Practices.returnList(nums);
+        ArrayList nums = new ArrayList();
+        nums = Practices.returnList(nums);
+        ArrayList nums1 = new ArrayList();
+        List nums2 = Practices.returnList(nums1);
+*/
+
+
+        a = 11;
     }
 
+    public static List returnList(List list) {
+        return list;
+    }
 
 
 }
