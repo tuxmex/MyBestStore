@@ -14,6 +14,9 @@ public class ProductTest {
         int tempQty;
         double tempPrice;
 
+        //Int variable maxSize
+        int maxSize;
+
         //Ask the user to enter the product information
         System.out.println("\n\nPlease enter the product name: ");
         tempName = in.nextLine();
