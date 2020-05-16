@@ -33,6 +33,13 @@ public class ProductTest {
         //Ask the user to enter the product information
         in.nextLine();
 
+        //Display prompt to user
+        System.out.println("Enter the number of products you would like to add.");
+        System.out.println("Enter 0 (zero) if you do not wish to add products: ");
+        //assume that the user enters a valid
+        maxSize = in.nextInt();
+
+
         System.out.println("\n\nPlease enter the product name: ");
         tempName = in.nextLine();
         System.out.println("Please enter the quantity of the esto for this product: ");
