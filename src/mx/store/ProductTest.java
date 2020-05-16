@@ -17,6 +17,18 @@ public class ProductTest {
         //Int variable maxSize
         int maxSize;
 
+        //prompt the user until they enter a number >= zero
+        do {
+            //Display prompt to user
+            System.out.println("Enter the number of products you would like to add.");
+            System.out.println("Enter 0 (zero) if you do not wish to add products: ");
+            //assume that the user enters a valid
+            maxSize = in.nextInt();
+            if (maxSize < 0)
+                System.out.println("Incorrect value entered");
+            //endif
+        } while (maxSize < 0);
+
         //Ask the user to enter the product information
         System.out.println("\n\nPlease enter the product name: ");
         tempName = in.nextLine();
@@ -32,13 +44,6 @@ public class ProductTest {
 
         //Ask the user to enter the product information
         in.nextLine();
-
-        //Display prompt to user
-        System.out.println("Enter the number of products you would like to add.");
-        System.out.println("Enter 0 (zero) if you do not wish to add products: ");
-        //assume that the user enters a valid
-        maxSize = in.nextInt();
-
 
         System.out.println("\n\nPlease enter the product name: ");
         tempName = in.nextLine();
