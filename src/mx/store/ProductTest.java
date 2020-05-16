@@ -58,6 +58,10 @@ public class ProductTest {
                 products[i] = new Product(tempNumber, tempName, tempQty, tempPrice);
 
             }//endfor
+
+            for (Product product : products) {
+                System.out.println(product);
+            }
         }//endif
 
 
