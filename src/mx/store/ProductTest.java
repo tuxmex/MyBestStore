@@ -27,6 +27,18 @@ public class ProductTest {
         //Create the first product using information input by the user
         Product p1 = new Product(tempNumber, tempName, tempQty, tempPrice);
 
+        //Ask the user to enter the product information
+        System.out.println("\n\nPlease enter the product name: ");
+        tempName = in.nextLine();
+        System.out.println("Please enter the quantity of the esto for this product: ");
+        tempQty = in.nextInt();
+        System.out.println("Please enter the price for this product: ");
+        tempPrice = in.nextDouble();
+        System.out.println("Please enter the item number: ");
+        tempNumber = in.nextInt();
+
+        //Create the second product using information input by the user
+        Product p2 = new Product(tempNumber, tempName, tempQty, tempPrice);
 
 
 
