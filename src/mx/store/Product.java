@@ -80,7 +80,7 @@ public class Product {
                 "\nName             :'" + name + '\'' +
                 "\nQuantity in stock:" + qtyInStock +
                 "\nPrice            :" + price +
-                "\nProduct status   :" + price;
+                "\nProduct status   :" + active;
     }
 } // end of class Product
 
