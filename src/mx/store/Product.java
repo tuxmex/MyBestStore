@@ -85,6 +85,7 @@ public class Product {
                 "\nName             :'" + name + '\'' +
                 "\nQuantity in stock:" + qtyInStock +
                 "\nPrice            :" + price +
+                "\nStock Value      :" + getInventoryValue() +
                 "\nProduct status   :" + (active ? "Active" : "Discontinued");
     }
 } // end of class Product
