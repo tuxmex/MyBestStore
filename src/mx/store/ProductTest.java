@@ -24,6 +24,11 @@ public class ProductTest {
         System.out.println("Please enter the item number: ");
         tempNumber = in.nextInt();
 
+        //Create the first product using information input by the user
+        Product p1 = new Product(tempNumber, tempName, tempQty, tempPrice);
+
+
+
 
     }
 }
