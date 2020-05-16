@@ -28,6 +28,8 @@ public class ProductTest {
         Product p1 = new Product(tempNumber, tempName, tempQty, tempPrice);
 
         //Ask the user to enter the product information
+        in.nextLine();
+        
         System.out.println("\n\nPlease enter the product name: ");
         tempName = in.nextLine();
         System.out.println("Please enter the quantity of the esto for this product: ");
