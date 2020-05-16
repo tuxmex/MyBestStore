@@ -72,6 +72,11 @@ public class Product {
         this.active = active;
     }// end method setActive
 
+    //Get total value of inventory for this Product
+    public double getInventoryValue() {
+        return price * qtyInStock;
+    }//en method getInventoryValue
+
     //sustituir método toString() de la clase Object
     //para permitir la visualización de cada objeto en la consola
     @Override
@@ -80,7 +85,7 @@ public class Product {
                 "\nName             :'" + name + '\'' +
                 "\nQuantity in stock:" + qtyInStock +
                 "\nPrice            :" + price +
-                "\nProduct status   :" + (active?"Active":"Discontinued");
+                "\nProduct status   :" + (active ? "Active" : "Discontinued");
     }
 } // end of class Product
 
