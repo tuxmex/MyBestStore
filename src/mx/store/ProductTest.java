@@ -23,7 +23,7 @@ public class ProductTest {
         tempPrice = in.nextDouble();
         System.out.println("Please enter the item number: ");
         tempNumber = in.nextInt();
-        
+
 
     }
 }
