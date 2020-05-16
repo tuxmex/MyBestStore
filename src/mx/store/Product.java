@@ -22,6 +22,16 @@ public class Product {
         this.price = price;
     }// end constructor
 
+    // add a quantity to qtyInStock used when receiving a shipment
+    public void addToInventory(int quantity) {
+        this.qtyInStock += quantity;
+    }//end method addToInventory
+
+    // substract a quantity from qtyInStock used when making sales
+    public void deductFromInventory(int quantity) {
+        this.qtyInStock -= quantity;
+    }// end method deductFromInventory
+
     // return the current value of itemNumber
     public int getItemNumber() {
         return itemNumber;
