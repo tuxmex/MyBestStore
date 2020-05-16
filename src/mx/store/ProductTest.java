@@ -50,6 +50,13 @@ public class ProductTest {
         return maxSize;
     }
 
+    static int getMenuOption(Scanner in){
+        int menuOption = -1;
+        // return the valid input from the user
+        return menuOption;
+    }//end method getMenuOption
+
+
     static void addToInventory(Product[] products, Scanner in) {
         //Create local variables
         int tempNumber;
