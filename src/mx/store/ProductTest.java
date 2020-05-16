@@ -59,9 +59,7 @@ public class ProductTest {
 
             }//endfor
 
-            for (Product product : products) {
-                System.out.println(product);
-            }
+           displayInventory(products);
         }//endif
 
         //Close the scanner object
