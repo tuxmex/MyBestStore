@@ -43,21 +43,26 @@ public class ProductTest {
             System.out.println("No products required!");
         } else {
             Product[] products = new Product[maxSize];
+            for (int i = 0; i < maxSize; i++) {
+                in.nextLine();
+                //Ask the user to enter the product information
+                System.out.println("\n\nPlease enter the product name: ");
+                tempName = in.nextLine();
+                System.out.println("Please enter the quantity of the esto for this product: ");
+                tempQty = in.nextInt();
+                System.out.println("Please enter the price for this product: ");
+                tempPrice = in.nextDouble();
+                System.out.println("Please enter the item number: ");
+                tempNumber = in.nextInt();
+                //Create a product object and store it in the products array
+                products[i] = new Product(tempNumber, tempName, tempQty, tempPrice);
+
+            }//endfor
         }//endif
 
 
-        //Ask the user to enter the product information
-        System.out.println("\n\nPlease enter the product name: ");
-        tempName = in.nextLine();
-        System.out.println("Please enter the quantity of the esto for this product: ");
-        tempQty = in.nextInt();
-        System.out.println("Please enter the price for this product: ");
-        tempPrice = in.nextDouble();
-        System.out.println("Please enter the item number: ");
-        tempNumber = in.nextInt();
 
-        //Create the first product using information input by the user
-        Product p1 = new Product(tempNumber, tempName, tempQty, tempPrice);
+
 
         //Ask the user to enter the product information
         in.nextLine();
@@ -83,7 +88,7 @@ public class ProductTest {
         //Set the active field to false
         p6.setActive(false);
 
-        System.out.println(p1);
+        //System.out.println(p1);
         System.out.println(p2);
         System.out.println(p3);
         System.out.println(p4);
