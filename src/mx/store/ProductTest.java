@@ -59,7 +59,7 @@ public class ProductTest {
 
             }//endfor
 
-           displayInventory(products);
+            displayInventory(products);
         }//endif
 
         //Close the scanner object
@@ -67,7 +67,31 @@ public class ProductTest {
 
     }
 
-    static void displayInventory(Product[] products){
+    static void addToInventory(Product[] products, Scanner in) {
+        //Create local variables
+        int tempNumber;
+        String tempName;
+        int tempQty;
+        double tempPrice;
+
+        for (int i = 0; i < products.length; i++) {
+            in.nextLine();
+            //Ask the user to enter the product information
+            System.out.println("\n\nPlease enter the product name: ");
+            tempName = in.nextLine();
+            System.out.println("Please enter the quantity of the esto for this product: ");
+            tempQty = in.nextInt();
+            System.out.println("Please enter the price for this product: ");
+            tempPrice = in.nextDouble();
+            System.out.println("Please enter the item number: ");
+            tempNumber = in.nextInt();
+            //Create a product object and store it in the products array
+            products[i] = new Product(tempNumber, tempName, tempQty, tempPrice);
+
+        }//endfor
+    }//end method addToInventory
+
+    static void displayInventory(Product[] products) {
         for (Product product : products) {
             System.out.println(product);
         } //end for
