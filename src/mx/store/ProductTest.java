@@ -52,6 +52,11 @@ public class ProductTest {
 
     static int getMenuOption(Scanner in){
         int menuOption = -1;
+
+        System.out.println("\n\n 1. View inventory\n2. Add Stock \n3. Deduct stock \n4. Discontinue Product\n0. Exit");
+        System.out.println("Please enter a menu option:");
+        menuOption = in.nextInt();
+
         // return the valid input from the user
         return menuOption;
     }//end method getMenuOption
