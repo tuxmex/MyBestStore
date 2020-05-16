@@ -6,6 +6,7 @@ public class Product {
     private String name; // name of the product
     private int qtyInStock; // quantity in stock
     private double price; // price of the product
+    private boolean active = true; // status of the product
 
     // default constructor witch initializes instance variables
     // numeric values are 0 and String values are "" (null)
@@ -36,7 +37,7 @@ public class Product {
         return name;
     }
 
-    // update the value of name
+    // updates the value of name
     public void setName(String name) {
         this.name = name;
     }
@@ -46,7 +47,7 @@ public class Product {
         return qtyInStock;
     }
 
-    // update the value of qtyInStock
+    // updates the value of qtyInStock
     public void setQtyInStock(int qtyInStock) {
         this.qtyInStock = qtyInStock;
     }
@@ -56,10 +57,20 @@ public class Product {
         return price;
     }
 
-    // update the value of price
+    // updates the value of price
     public void setPrice(double price) {
         this.price = price;
     }
+
+    //return the current value of active
+    public boolean isActive() {
+        return active;
+    }//end the method isActive
+
+    // updates the value of active
+    public void setActive(boolean active) {
+        this.active = active;
+    }// end method setActive
 
     //sustituir método toString() de la clase Object
     //para permitir la visualización de cada objeto en la consola
