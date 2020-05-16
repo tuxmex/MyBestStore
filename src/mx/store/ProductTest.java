@@ -8,13 +8,23 @@ public class ProductTest {
 
         //Create a Scanner object for keyboard input
         Scanner in = new Scanner(System.in);
+        int maxSize = getNumProducts(in);
 
-        //Create local variables
-        int tempNumber;
-        String tempName;
-        int tempQty;
-        double tempPrice;
+        if (maxSize == 0) {
+            //Display a no products message if zero is entered
+            System.out.println("No products required!");
+        } else {
+            Product[] products = new Product[maxSize];
+            addToInventory(products, in);
+            displayInventory(products);
+        }//endif
 
+        //Close the scanner object
+        in.close();
+
+    }
+
+    static int getNumProducts(Scanner in) {
         //Int variable maxSize
         int maxSize = -1;
 
@@ -37,19 +47,7 @@ public class ProductTest {
                 in.nextLine();
             }
         } while (maxSize < 0);
-
-        if (maxSize == 0) {
-            //Display a no products message if zero is entered
-            System.out.println("No products required!");
-        } else {
-            Product[] products = new Product[maxSize];
-            addToInventory(products, in);
-            displayInventory(products);
-        }//endif
-
-        //Close the scanner object
-        in.close();
-
+        return maxSize;
     }
 
     static void addToInventory(Product[] products, Scanner in) {
