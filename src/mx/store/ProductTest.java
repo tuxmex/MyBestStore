@@ -68,4 +68,10 @@ public class ProductTest {
         in.close();
 
     }
+
+    static void displayInventory(Product[] products){
+
+    }//end method displayInventory
+
+
 }
