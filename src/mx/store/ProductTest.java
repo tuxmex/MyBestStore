@@ -29,7 +29,7 @@ public class ProductTest {
 
         //Ask the user to enter the product information
         in.nextLine();
-        
+
         System.out.println("\n\nPlease enter the product name: ");
         tempName = in.nextLine();
         System.out.println("Please enter the quantity of the esto for this product: ");
@@ -42,7 +42,8 @@ public class ProductTest {
         //Create the second product using information input by the user
         Product p2 = new Product(tempNumber, tempName, tempQty, tempPrice);
 
-
+        //Close the scanner object
+        in.close();
 
     }
 }
