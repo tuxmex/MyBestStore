@@ -24,6 +24,12 @@ public class ProductTest {
 
     }
 
+    static void discontinueInventory(Product[] products, Scanner in) {
+        int productChoice;
+
+    }// end method discontinueInventory
+
+
     static int getProductNumber(Product[] products, Scanner in) {
         int productChoice = -1;
         //display the contents of the products array
@@ -98,6 +104,7 @@ public class ProductTest {
         products[productChoice].deductFromInventory(updateValue);
 
     }//end method deductInventory
+
 
     static int getNumProducts(Scanner in) {
         //Int variable maxSize
