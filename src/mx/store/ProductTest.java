@@ -30,6 +30,22 @@ public class ProductTest {
         for (int i = 0; i < products.length; i++) {
             System.out.println(i + " : " + products[i].getName());
         }//endor
+
+        do {
+            try {
+                System.out.println("Please enter the item number of the product you want to update: ");
+                productChoice = in.nextInt();
+                if (productChoice < 0 || productChoice > products.length - 1)
+                    System.out.println("Please only enter values between 0 and " + (products.length - 1));
+                //endif
+            } catch (InputMismatchException e) {
+                System.out.println("Incorrect data type entered!");
+                in.nextLine();
+            } catch (Exception e) {
+                System.out.println(e);
+                in.nextLine();
+            }
+        } while (productChoice < 0 || productChoice > products.length - 1);
         return productChoice;
     }// end method getProductNumber
 
