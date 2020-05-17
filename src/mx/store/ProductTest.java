@@ -52,6 +52,7 @@ public class ProductTest {
     static void addInventory(Product[] products, Scanner in) {
         int productChoice;
         int updateValue = -1;
+        productChoice = getProductNumber(products, in);
     }// end method addInventory
 
     static int getNumProducts(Scanner in) {
