@@ -8,7 +8,10 @@ public class ProductTest {
 
         //Create a Scanner object for keyboard input
         Scanner in = new Scanner(System.in);
-        int maxSize = getNumProducts(in);
+        int maxSize, menuChoice;
+
+        maxSize = getNumProducts(in);
+
 
         if (maxSize == 0) {
             //Display a no products message if zero is entered
@@ -16,7 +19,10 @@ public class ProductTest {
         } else {
             Product[] products = new Product[maxSize];
             addToInventory(products, in);
-            displayInventory(products);
+            do {
+                menuChoice = getMenuOption(in);
+                executeMenuChoice(menuChoice, products, in);
+            } while (menuChoice != 0);
         }//endif
 
         //Close the scanner object
