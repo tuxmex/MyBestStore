@@ -26,7 +26,10 @@ public class ProductTest {
 
     static int getProductNumber(Product[] products, Scanner in) {
         int productChoice = -1;
-
+        //display the contents of the products array
+        for (int i = 0; i < products.length; i++) {
+            System.out.println(i + " : " + products[i].getName());
+        }//endor
         return productChoice;
     }// end method getProductNumber
 
