@@ -70,6 +70,11 @@ public class ProductTest {
         return menuOption;
     }//end method getMenuOption
 
+    static int getProductNumber(Product[] products, Scanner in){
+        int productChoice = -1;
+
+        return productChoice;
+    }// end method getProductNumber
 
     static void addToInventory(Product[] products, Scanner in) {
         //Create local variables
