@@ -52,11 +52,20 @@ public class ProductTest {
 
     static int getMenuOption(Scanner in){
         int menuOption = -1;
+        do {
+            try {
+                System.out.println("\n\n 1. View inventory\n2. Add Stock \n3. Deduct stock \n4. Discontinue Product\n0. Exit");
+                System.out.println("Please enter a menu option:");
+                menuOption = in.nextInt();
+            } catch (InputMismatchException e) {
+                System.out.println("Incorrect data type entered!");
+                in.nextLine();
+            } catch (Exception e) {
+                System.out.println(e);
+                in.nextLine();
+            }
 
-        System.out.println("\n\n 1. View inventory\n2. Add Stock \n3. Deduct stock \n4. Discontinue Product\n0. Exit");
-        System.out.println("Please enter a menu option:");
-        menuOption = in.nextInt();
-
+        } while (menuOption < 0 || menuOption > 4);
         // return the valid input from the user
         return menuOption;
     }//end method getMenuOption
