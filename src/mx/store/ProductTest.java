@@ -49,6 +49,11 @@ public class ProductTest {
         return productChoice;
     }// end method getProductNumber
 
+    static void addInventory(Product[] products, Scanner in) {
+        int productChoice;
+        int updateValue = -1;
+    }// end method addInventory
+
     static int getNumProducts(Scanner in) {
         //Int variable maxSize
         int maxSize = -1;
