@@ -24,6 +24,10 @@ public class ProductTest {
 
     }
 
+    static void executeMenuChoice(int choice, Product[] products, Scanner in) {
+
+    }
+
     static void discontinueInventory(Product[] products, Scanner in) {
         int productChoice;
         productChoice = getProductNumber(products, in);
