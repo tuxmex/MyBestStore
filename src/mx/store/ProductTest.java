@@ -26,7 +26,7 @@ public class ProductTest {
 
     static void discontinueInventory(Product[] products, Scanner in) {
         int productChoice;
-
+        productChoice = getProductNumber(products, in);
     }// end method discontinueInventory
 
 
