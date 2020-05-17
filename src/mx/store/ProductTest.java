@@ -71,6 +71,34 @@ public class ProductTest {
         products[productChoice].addToInventory(updateValue);
     }// end method addInventory
 
+    static void deductInventory(Product[] products, Scanner in) {
+        int productChoice;
+        int updateValue = -1;
+        productChoice = getProductNumber(products, in);
+
+        do {
+            try {
+                System.out.println("How many products do you want to deduct? ");
+                updateValue = in.nextInt();
+                if (updateValue < 0)
+                    System.out.println("Please only enter positive values to deduct stock");
+                //endif
+                if (updateValue > products[productChoice].getQtyInStock())
+                    System.out.println("There is not enough stock to remove tha amount, only " +
+                            products[productChoice].getQtyInStock() + " left!");
+            } catch (InputMismatchException e) {
+                System.out.println("Incorrect data type entered!");
+                in.nextLine();
+            } catch (Exception e) {
+                System.out.println(e);
+                in.nextLine();
+            }
+        } while (updateValue < 0 || updateValue > products[productChoice].getQtyInStock());
+
+        products[productChoice].deductFromInventory(updateValue);
+
+    }//end method deductInventory
+
     static int getNumProducts(Scanner in) {
         //Int variable maxSize
         int maxSize = -1;
