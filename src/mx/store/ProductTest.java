@@ -53,6 +53,21 @@ public class ProductTest {
         int productChoice;
         int updateValue = -1;
         productChoice = getProductNumber(products, in);
+        do {
+            try {
+                System.out.println("How many products do you want tho add? ");
+                updateValue = in.nextInt();
+                if (updateValue < 0)
+                    System.out.println("Please only enter positive values to add stock");
+                // endif
+            } catch (InputMismatchException e) {
+                System.out.println("Incorrect data type entered!");
+                in.nextLine();
+            } catch (Exception e) {
+                System.out.println(e);
+                in.nextLine();
+            }
+        } while (updateValue < 0);
     }// end method addInventory
 
     static int getNumProducts(Scanner in) {
