@@ -27,6 +27,7 @@ public class ProductTest {
     static void discontinueInventory(Product[] products, Scanner in) {
         int productChoice;
         productChoice = getProductNumber(products, in);
+        products[productChoice].setActive(false);
     }// end method discontinueInventory
 
 
