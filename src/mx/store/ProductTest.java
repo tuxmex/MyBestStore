@@ -25,8 +25,25 @@ public class ProductTest {
     }
 
     static void executeMenuChoice(int choice, Product[] products, Scanner in) {
-
-    }
+        switch (choice) {
+            case 1:
+                System.out.println("View Product List");
+                displayInventory(products);
+                break;
+            case 2:
+                System.out.println("Add Stock");
+                addToInventory(products, in);
+                break;
+            case 3:
+                System.out.println("Deduct Stock");
+                deductInventory(products, in);
+                break;
+            case 4:
+                System.out.println("Discontinue Stock");
+                discontinueInventory(products, in);
+                break;
+        }// end switch
+    }// end method executeMenuChoice
 
     static void discontinueInventory(Product[] products, Scanner in) {
         int productChoice;
