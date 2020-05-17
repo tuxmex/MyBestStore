@@ -68,6 +68,7 @@ public class ProductTest {
                 in.nextLine();
             }
         } while (updateValue < 0);
+        products[productChoice].addToInventory(updateValue);
     }// end method addInventory
 
     static int getNumProducts(Scanner in) {
