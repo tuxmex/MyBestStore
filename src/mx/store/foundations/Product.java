@@ -1,4 +1,4 @@
-package mx.store;
+package mx.store.foundations;
 
 public class Product {
     // Instance field declarations

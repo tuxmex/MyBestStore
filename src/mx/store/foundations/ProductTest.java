@@ -1,4 +1,4 @@
-package mx.store;
+package mx.store.foundations;
 
 import java.util.InputMismatchException;
 import java.util.Scanner;

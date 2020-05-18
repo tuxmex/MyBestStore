@@ -1,4 +1,4 @@
-package mx.store;
+package mx.store.foundations;
 
 import java.util.List;
 
@@ -59,9 +59,58 @@ public class Practices {
         ArrayList nums1 = new ArrayList();
         List nums2 = Practices.returnList(nums1);
 */
+ /*       boolean status=false;
+        int i=1;
+        System.out.println(i);
+        if( (++i>1)  && (status=true)) {
+            System.out.println(i);
+            i++;
+        }
+        System.out.println(i);
+        if( (++i>3)  ||  (status=false))
+            i++;
+        System.out.println(i);*/
+
+        /*int x = 1;
+        int y;
+        while(++x < 5)
+            y++;
+        System.out.println(y);*/
+
+       /* String str1 = "java";
+        String str2 = "java";
+        System.out.println(str1.equals(str2) + "," + str1.equals(new String("hello")));
+        */
+      /*  int id[];
+        int i[1];
+        int i[1] id;
+        int[] id1= new int[]{1,2,3,4,5};*/
+/*        int[] myarray={1,2,3,4,5};
+        int sum=0;
+        for (int x : myarray)
+            sum+=x;
+        System.out.println("sum= " + sum);*/
+
+     /*   int i=0, j=0;
+        i=i++;
+        j=i++;
+        System.out.println("i=" + i + " " + "j=" + j);*/
+
+     /*   float f = 3.0L;
 
 
-        a = 11;
+        float f1 = -1;
+
+
+        float f2 = 0x345;
+
+
+        float f3 = 2.0f;
+
+
+        float f4 = 1.0;*/
+
+        System.out.println(1 + 2 + "java" + 3);
     }
 
     public static List returnList(List list) {
